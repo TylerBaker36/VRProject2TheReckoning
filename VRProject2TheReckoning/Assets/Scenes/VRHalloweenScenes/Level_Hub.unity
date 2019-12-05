@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdc3f249452d7c468f6bfd7a3115d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Level_MiniGolf1
+  scene_name: Level_ShootingGallery
 --- !u!65 &104650722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdc3f249452d7c468f6bfd7a3115d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Level_ShootingGallery
+  scene_name: Level_MiniGolf1
 --- !u!65 &1193922602
 BoxCollider:
   m_ObjectHideFlags: 0
