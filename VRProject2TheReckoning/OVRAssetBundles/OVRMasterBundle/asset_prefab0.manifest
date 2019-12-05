@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 4057259000
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c5dddcc198f4344c8f8ee56d3c95b769
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c596cdbac97a81a2b834337a818f57c7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7e933e81d3c20c74ea6fdc708a67e3a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac27124318cf8e84aa7350c2ac1cdb80, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 00f3402a2ea5bff4880c0313515240cd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a139d83bf6796734db220df8a5bfacbd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Core/AvatarGrab/Prefabs/LocalAvatarWithGrab.prefab
+Dependencies:
+- C:/Users/Stephen/Dropbox/Projects/Unreal Engine/VRProject2TheReckoning/VRProject2TheReckoning/OVRAssetBundles/OVRMasterBundle/asset_resources

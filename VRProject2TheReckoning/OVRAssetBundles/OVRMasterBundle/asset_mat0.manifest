@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 115625279
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bc08edf46ec14c16351231f5849cf043
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7456ae20b019c8f6d611f437758de8f2
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02.mat
+- Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/WoodBlockWithOutline.mat
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/WoodBlock.mat
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/ToyCubeMat.mat
+Dependencies:
+- C:/Users/Stephen/Dropbox/Projects/Unreal Engine/VRProject2TheReckoning/VRProject2TheReckoning/OVRAssetBundles/OVRMasterBundle/asset_png0
+- C:/Users/Stephen/Dropbox/Projects/Unreal Engine/VRProject2TheReckoning/VRProject2TheReckoning/OVRAssetBundles/OVRMasterBundle/asset_shader0

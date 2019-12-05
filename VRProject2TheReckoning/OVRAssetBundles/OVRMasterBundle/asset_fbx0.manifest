@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1122323979
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 219373c213109638b60f5cfb62f9b47a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 767a59f8de390d2354823e760c737a44
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Models/block_wood_01.fbx
+Dependencies:
+- C:/Users/Stephen/Dropbox/Projects/Unreal Engine/VRProject2TheReckoning/VRProject2TheReckoning/OVRAssetBundles/OVRMasterBundle/asset_mat0

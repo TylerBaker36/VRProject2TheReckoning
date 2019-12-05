@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2821527021
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: af267ca66d61a2f12b4595fd974f08a6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Down-Y.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Textures/block_wood_01_dif.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Up+Y.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Right-X.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Back-Z.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Left+X.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Textures/block_wood_01_msm.png
+- Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/CubeTex.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Skyboxes/Sky_02/Skybox02_Front+Z.png
+- Assets/Oculus/SampleFramework/Usage/SharedAssets/Textures/block_wood_01_nml.png
+Dependencies: []
