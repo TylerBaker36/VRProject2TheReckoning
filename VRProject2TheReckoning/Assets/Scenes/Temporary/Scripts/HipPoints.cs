@@ -13,6 +13,7 @@ public class HipPoints : MonoBehaviour
     private void Start()
     {
         hpBar.fillAmount = 1.0f;
+        this.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,7 +22,7 @@ public class HipPoints : MonoBehaviour
         {
             if (currentHP > 0)
             {
-                maxHP--;
+                currentHP--;
                 hpBar.fillAmount = currentHP / maxHP;
             }
             else if (currentHP == 0)
