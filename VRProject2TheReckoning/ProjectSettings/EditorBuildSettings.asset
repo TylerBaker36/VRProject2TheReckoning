@@ -9,18 +9,24 @@ EditorBuildSettings:
     path: Assets/Oculus/VR/Scenes/ControllerModels.unity
     guid: 39cfe7aa0a2d46c47994d8d0308ec663
   - enabled: 0
-    path: Assets/Scenes/Temporary/VR1_Setup.unity
-    guid: 3d9fa36752e10c9478c76990d9b89f6a
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/VRHalloweenScenes/Level_Hub.unity
     guid: 75f1b3255b3a3a849a1767dbd7b8cfdd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRHalloweenScenes/Level_RingToss.unity
     guid: 94e6f1e968e04e4499420d2f393bcdfe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRHalloweenScenes/Level_CornHole.unity
     guid: 9b3e1387fad42d746a6cb4d38c8ce574
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VRHalloweenScenes/Level_MiniGolf1.unity
     guid: 8d90003370cf94647af7d78bc0ef1cb1
+  - enabled: 0
+    path: Assets/Scenes/TeleportTest.unity
+    guid: fc993e316e1bb3a48836bd17fa57afa6
+  - enabled: 1
+    path: Assets/Scenes/VRHalloweenScenes/Level_ShootingGallery.unity
+    guid: 72813e8eff841764a872861edf1908cc
   m_configObjects: {}
