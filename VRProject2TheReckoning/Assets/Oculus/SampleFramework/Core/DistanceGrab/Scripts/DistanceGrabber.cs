@@ -106,7 +106,13 @@ namespace OculusSampleFramework
 #endif
     }
 
-    void Update()
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, transform.forward);
+        }
+
+        void Update()
         {
 
             Debug.DrawRay(transform.position, transform.forward, Color.red, 0.1f);
