@@ -127,7 +127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-313732
+  m_Name: pb_Mesh-3164
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -290,7 +290,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4104
+  m_Name: pb_Mesh-2196
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -626,11 +626,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 269373102}
-    - target: {fileID: 2253437828642650886, guid: aa0402eef53b1d84398a0fa4b8ef3dbb,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2253437828642650888, guid: aa0402eef53b1d84398a0fa4b8ef3dbb,
         type: 3}
       propertyPath: m_Name
@@ -2265,11 +2260,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 48379416}
-    - target: {fileID: 7716358286696156595, guid: d345f1e8f6afe624c9ea9b9f345d01a6,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7716358286696156597, guid: d345f1e8f6afe624c9ea9b9f345d01a6,
         type: 3}
       propertyPath: m_Name
@@ -2998,7 +2988,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4324
+  m_Name: pb_Mesh-3250
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3364,25 +3354,20 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1763515731}
-    - target: {fileID: 2728773618981792315, guid: be5a0214d3ca1254799b0a70bfe882b5,
-        type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2728773618981792319, guid: be5a0214d3ca1254799b0a70bfe882b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.319
       objectReference: {fileID: 0}
     - target: {fileID: 2728773618981792319, guid: be5a0214d3ca1254799b0a70bfe882b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 3.166
       objectReference: {fileID: 0}
     - target: {fileID: 2728773618981792319, guid: be5a0214d3ca1254799b0a70bfe882b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 4.344
       objectReference: {fileID: 0}
     - target: {fileID: 2728773618981792319, guid: be5a0214d3ca1254799b0a70bfe882b5,
         type: 3}
