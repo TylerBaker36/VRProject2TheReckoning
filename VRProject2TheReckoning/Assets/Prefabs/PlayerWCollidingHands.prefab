@@ -7008,7 +7008,7 @@ GameObject:
   - component: {fileID: 3170277552105504068}
   m_Layer: 0
   m_Name: OVRPlayerController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7287,7 +7287,7 @@ GameObject:
   - component: {fileID: 7306210957017638998}
   m_Layer: 0
   m_Name: PlayerWCollidingHands
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
