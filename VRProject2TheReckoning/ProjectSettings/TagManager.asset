@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Bullet
   - Beanbag
-  - GoalTrigger
-  - SetupTrigger
   layers:
   - Default
   - TransparentFX

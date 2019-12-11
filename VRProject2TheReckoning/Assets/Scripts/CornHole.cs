@@ -12,42 +12,55 @@ public class CornHole : MonoBehaviour
     // Handles reseting the beanbags on round end
     private void OnTriggerExit(Collider CheckBags)
     {
-        if (CheckBags.gameObject.name == "StagingArea")
+        if (this.name == "StagingArea")
         {
+            //Debug.Log(this.name);
             if (CheckBags.gameObject.CompareTag("Beanbag"))
             {
                 beanbag_count--;
+                //Debug.Log("Beanbag count: " + beanbag_count);
             }
 
             if (beanbag_count == 0)
             {
-                StartCoroutine(wait());
-                // reset positions
-                if (beanbags == null)
-                    beanbags = GameObject.FindGameObjectsWithTag("Beanbag");
-                foreach (GameObject b in beanbags)
-                {
-                    b.GetComponent<Beanbag>().Respawn();
-                }
-                beanbag_count = 4;
+                Debug.Log("STARTING CO-ROUTINE - Beanbag count: " + beanbag_count);
+                StartCoroutine(wait_then_reset(3.0f)); // reset positions in coroutine
             }
         }
     }
 
     private void OnTriggerEnter(Collider GoalTriggers)
     {
-        if (GoalTriggers.gameObject.name == "Goal Trigger")
+        if (this.name == "GoalTrigger")
         {
-
+            if (GoalTriggers.gameObject.CompareTag("Beanbag"))
+            {
+                Debug.Log("GOAL!!! SCORE: " + scoreKeeper.GetComponent<ScoreKeeper>().getRoundScore() + " " + GoalTriggers.gameObject.name);
+                // We scored! Only give 2 points here (out of the full 3) because passing through the board trigger will always yield a point
+                scoreKeeper.GetComponent<ScoreKeeper>().Score(2);
+            }
         }
-        else if (GoalTriggers.gameObject.name == "Board Trigger")
+        else if (this.name == "BoardTrigger")
         {
-
+            if (GoalTriggers.gameObject.CompareTag("Beanbag"))
+            {
+                Debug.Log("BOARD. SCORE: " + scoreKeeper.GetComponent<ScoreKeeper>().getRoundScore() + " " + GoalTriggers.gameObject.name);
+                // Since it is impossible to score in the goal without passing through the board trigger, always award 1 point even to those who just pass through (for now)
+                scoreKeeper.GetComponent<ScoreKeeper>().Score(1);
+            }
         }
     }
 
-    private IEnumerator wait()
+    private IEnumerator wait_then_reset(float f)
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(f);
+        if (beanbags == null)
+            beanbags = GameObject.FindGameObjectsWithTag("Beanbag");
+        foreach (GameObject b in beanbags)
+        {
+            b.GetComponent<Beanbag>().Respawn();
+        }
+        beanbag_count = 4;
+        scoreKeeper.GetComponent<ScoreKeeper>().RoundReset(); // Reset round but not overall score
     }
 }
