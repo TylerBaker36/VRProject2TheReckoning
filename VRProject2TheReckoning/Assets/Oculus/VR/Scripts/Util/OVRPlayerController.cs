@@ -74,6 +74,16 @@ public class OVRPlayerController : MonoBehaviour
 	public bool HmdRotatesY = true;
 
 	/// <summary>
+	/// If true, ratchet rotation will cause a brief (fadeRatchetDuration) amount of fade to the camera.
+	/// </summary>
+	public bool fadeOnRotate = true;
+
+	/// <summary>
+	/// The amount of time in seconds that the camera will fade after rotating ratchets.
+	/// </summary>
+	public float fadeRatchetDuration = 0.2f;
+
+	/// <summary>
 	/// Modifies the strength of gravity.
 	/// </summary>
 	public float GravityModifier = 0.379f;
@@ -134,6 +144,7 @@ public class OVRPlayerController : MonoBehaviour
 
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraRig = null;
+	private OVRScreenFade Fader = null;
 
 	private float MoveScale = 1.0f;
 	private Vector3 MoveThrottle = Vector3.zero;
@@ -176,6 +187,10 @@ public class OVRPlayerController : MonoBehaviour
 			Debug.LogWarning("OVRPlayerController: More then 1 OVRCameraRig attached.");
 		else
 			CameraRig = CameraRigs[0];
+
+		Fader = GetComponentInChildren<OVRScreenFade>();
+		if(Fader == null)
+			Debug.LogWarning("OVRScreenFade component not attached.");
 
 		InitialYRotation = transform.rotation.eulerAngles.y;
 	}
@@ -442,6 +457,7 @@ public class OVRPlayerController : MonoBehaviour
 					{
 						euler.y -= RotationRatchet;
 						ReadyToSnapTurn = false;
+						Fade();
 					}
 				}
 				else if (OVRInput.Get(OVRInput.Button.SecondaryThumbstickRight) ||
@@ -451,6 +467,7 @@ public class OVRPlayerController : MonoBehaviour
 					{
 						euler.y += RotationRatchet;
 						ReadyToSnapTurn = false;
+						Fade();
 					}
 				}
 				else
@@ -476,6 +493,20 @@ public class OVRPlayerController : MonoBehaviour
 		}
 	}
 
+	private void Fade()
+	{
+		if (!fadeOnRotate) return;
+		//float tempTime = Fader.fadeTime;
+		Fader.fadeTime = fadeRatchetDuration;
+		Fader.FadeIn();
+		//StartCoroutine(ResetFade(tempTime));
+	}
+
+	//private System.Collections.IEnumerator ResetFade(float newFadeTime)
+	//{
+	//	yield return new WaitForSecondsRealtime(fadeRatchetDuration);
+	//	Fader.fadeTime = newFadeTime;
+	//}
 
 	/// <summary>
 	/// Invoked by OVRCameraRig's UpdatedAnchors callback. Allows the Hmd rotation to update the facing direction of the player.

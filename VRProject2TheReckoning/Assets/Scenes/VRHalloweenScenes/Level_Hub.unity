@@ -4290,20 +4290,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3170277552095386042, guid: d7a165b1b1488824581f92dd453f62e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3429057682393144271, guid: d7a165b1b1488824581f92dd453f62e7,
         type: 3}
       propertyPath: m_Name
       value: PlayerWCollidingHands
       objectReference: {fileID: 0}
+    - target: {fileID: 3429057682393144271, guid: d7a165b1b1488824581f92dd453f62e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7306210957017638998, guid: d7a165b1b1488824581f92dd453f62e7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.76
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7306210957017638998, guid: d7a165b1b1488824581f92dd453f62e7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.047
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7306210957017638998, guid: d7a165b1b1488824581f92dd453f62e7,
         type: 3}

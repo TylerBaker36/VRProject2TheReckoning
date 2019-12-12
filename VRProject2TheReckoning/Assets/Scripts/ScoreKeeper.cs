@@ -36,17 +36,17 @@ public class ScoreKeeper : MonoBehaviour
         overallScore.text = string.Format("{0:00}", oscore.ToString().PadLeft(2, '0'));
     }
 
-    public bool RoundReset()
+    public void RoundReset()
     {
         rscore = 0;
         roundScore.text = "00";
-        return (roundScore.text == "00");
+        //return (roundScore.text == "00");
     }
 
-    public bool ScoreReset()
+    public void ScoreReset()
     {
         oscore = 0;
         overallScore.text = "00";
-        return (overallScore.text == "00");
+        //return (overallScore.text == "00");
     }
 }
