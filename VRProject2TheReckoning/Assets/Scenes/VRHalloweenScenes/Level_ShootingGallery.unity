@@ -2515,7 +2515,7 @@ PrefabInstance:
     - target: {fileID: 5791420736184408901, guid: 56259fddf5f8ab849afdaffd1ecdbd33,
         type: 3}
       propertyPath: m_TagString
-      value: ShootableObj
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5791420736184408902, guid: 56259fddf5f8ab849afdaffd1ecdbd33,
         type: 3}
@@ -2571,6 +2571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791420737040401858, guid: 56259fddf5f8ab849afdaffd1ecdbd33,
+        type: 3}
+      propertyPath: m_TagString
+      value: ShootableObj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56259fddf5f8ab849afdaffd1ecdbd33, type: 3}
