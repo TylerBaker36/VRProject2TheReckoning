@@ -20,12 +20,12 @@ public class HipPoints : MonoBehaviour
     {
         if (collision.collider.tag == "Bullet")
         {
-            if (currentHP > 0)
+            if (currentHP > 1.0f)
             {
                 currentHP--;
                 hpBar.fillAmount = currentHP / maxHP;
             }
-            else if (currentHP == 0)
+            else if (currentHP == 1.0f)
             {
 
                 Destroy(this.gameObject);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestoryShell : MonoBehaviour
 {
     float timeLeft = 1f;
+
     // Update is called once per frame
     void Update()
     {
@@ -15,4 +16,5 @@ public class DestoryShell : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }
