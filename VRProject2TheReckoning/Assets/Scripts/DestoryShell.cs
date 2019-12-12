@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class DestoryShell : MonoBehaviour
 {
-    float timer = 10f;
-    // Update is called once per frame
-    void Update()
-    {
-        timer -= Time.time;
+    //float timeLeft = 10f;
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    timeLeft -= Time.deltaTime;
 
-        if (timer < 0)
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    //    if (timeLeft < 0)
+    //    {
+    //        Destroy(this.gameObject);
+    //    }
+    //}
 }
