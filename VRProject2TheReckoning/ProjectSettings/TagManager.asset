@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - Beanbag
   - Target
+  - Goal
+  - StartArea
   layers:
   - Default
   - TransparentFX
