@@ -20,6 +20,9 @@ public class Beanbag : MonoBehaviour
 
     public void Respawn()
     {
+        gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         gameObject.transform.position = start_pos;
     }
 }
