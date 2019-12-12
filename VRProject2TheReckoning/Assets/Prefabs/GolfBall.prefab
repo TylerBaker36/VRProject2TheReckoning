@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 7566211456176041789}
   - component: {fileID: 1437885463719941716}
   - component: {fileID: 1366263709069734661}
+  - component: {fileID: 4303186001575529347}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: GolfBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,3 +129,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &4303186001575529347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566211456176041762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f76c291bd54bc41811959d6a79d351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1002,7 +1002,7 @@ GameObject:
   - component: {fileID: 442945775}
   m_Layer: 0
   m_Name: Table
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1097,7 +1097,7 @@ GameObject:
   - component: {fileID: 455268540}
   m_Layer: 0
   m_Name: Cube0
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1225,7 +1225,7 @@ GameObject:
   - component: {fileID: 483086106}
   m_Layer: 0
   m_Name: Cube1
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1746,7 +1746,7 @@ GameObject:
   - component: {fileID: 668321941}
   m_Layer: 0
   m_Name: Cube2
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2004,7 +2004,7 @@ GameObject:
   - component: {fileID: 769759864}
   m_Layer: 0
   m_Name: Cube4
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2043,7 +2043,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769759862}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2177,7 +2177,7 @@ GameObject:
   - component: {fileID: 861190458}
   m_Layer: 0
   m_Name: Cube2
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2216,7 +2216,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861190456}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2618,12 +2618,12 @@ PrefabInstance:
     - target: {fileID: 5791420737040401858, guid: 56259fddf5f8ab849afdaffd1ecdbd33,
         type: 3}
       propertyPath: m_TagString
-      value: ShootableObj
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 5791420737040401861, guid: 56259fddf5f8ab849afdaffd1ecdbd33,
         type: 3}
       propertyPath: m_Mass
-      value: 0.0000001
+      value: 1000000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56259fddf5f8ab849afdaffd1ecdbd33, type: 3}
@@ -2649,7 +2649,7 @@ GameObject:
   - component: {fileID: 1163862206}
   m_Layer: 0
   m_Name: Cube5
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2777,7 +2777,7 @@ GameObject:
   - component: {fileID: 1169873281}
   m_Layer: 0
   m_Name: Cube1
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2816,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169873279}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3188,7 +3188,7 @@ GameObject:
   - component: {fileID: 1305845218}
   m_Layer: 0
   m_Name: Cube3
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 1314387412}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3667,7 +3667,7 @@ GameObject:
   - component: {fileID: 1432393015}
   m_Layer: 0
   m_Name: Cube3
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3706,7 +3706,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432393013}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4202,7 +4202,7 @@ GameObject:
   - component: {fileID: 1596469865}
   m_Layer: 0
   m_Name: Cube4
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4797,7 +4797,7 @@ GameObject:
   - component: {fileID: 1897833628}
   m_Layer: 0
   m_Name: Cube5
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4836,7 +4836,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897833626}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5054,7 +5054,7 @@ GameObject:
   - component: {fileID: 2084578609}
   m_Layer: 0
   m_Name: Cube0
-  m_TagString: ShootableObj
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5093,7 +5093,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084578607}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

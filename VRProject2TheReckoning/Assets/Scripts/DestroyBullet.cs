@@ -6,7 +6,7 @@ public class DestroyBullet : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "ShootableObj")
+        if (collision.gameObject.tag == "Target")
         {
             Destroy(this.gameObject);
         }
