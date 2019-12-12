@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GolfRespawner : MonoBehaviour
 {
-    public GameObject Target;
-    public GameObject Respawner;
+    public Transform target;
+    public Transform respawner;
 
+    public void TeleportBall(GameObject gameObject)
+    {
+        gameObject.transform.position = respawner.position;
+    }
 }
