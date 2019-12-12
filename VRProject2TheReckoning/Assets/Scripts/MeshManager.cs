@@ -6,7 +6,7 @@ public class MeshManager : MonoBehaviour
 {
     [SerializeField] 
     [Tooltip("(delta)Time in seconds before the mesh is rebaked.")] 
-    private float refreshInterval = 0.5f;
+    private float refreshInterval = 0.1f;
 
     private SkinnedMeshRenderer meshRenderer;
     private MeshCollider collider;
@@ -18,7 +18,7 @@ public class MeshManager : MonoBehaviour
     {
         meshRenderer = GetComponent<SkinnedMeshRenderer>();
         collider = GetComponent<MeshCollider>();
-        mesh = meshRenderer.sharedMesh;
+        mesh = new Mesh();
     }
 
     // Update is called once per frame
@@ -34,9 +34,10 @@ public class MeshManager : MonoBehaviour
 
     public void UpdateCollider()
     {
-        Mesh colliderMesh = new Mesh();
-        meshRenderer.BakeMesh(colliderMesh);
+        //Mesh colliderMesh = new Mesh();
+        mesh.Clear();
+        meshRenderer.BakeMesh(mesh);
         collider.sharedMesh = null;
-        collider.sharedMesh = colliderMesh;
+        collider.sharedMesh = mesh;
     }
 }
