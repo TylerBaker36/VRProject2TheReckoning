@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b12774cd63a6304ea75802b68e94c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshInterval: 0.5
+  refreshInterval: 0.1
 --- !u!1 &3168628112771642803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,7 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b12774cd63a6304ea75802b68e94c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshInterval: 0.5
+  refreshInterval: 0.1
 --- !u!1 &3168991558325490543
 GameObject:
   m_ObjectHideFlags: 0
@@ -7069,6 +7069,8 @@ MonoBehaviour:
   FixedSpeedSteps: 0
   HmdResetsY: 1
   HmdRotatesY: 0
+  fadeOnRotate: 1
+  fadeRatchetDuration: 0.2
   GravityModifier: 1
   useProfileData: 1
   EnableLinearMovement: 1
