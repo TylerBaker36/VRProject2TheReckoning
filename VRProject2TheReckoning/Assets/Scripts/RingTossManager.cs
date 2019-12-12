@@ -11,8 +11,9 @@ public class RingTossManager : MonoBehaviour
 	[SerializeField] private Rigidbody rb;
 	[SerializeField] private ScoreKeeper scoreKeeper;
 
-	private int count;
-	private int rounds;
+	private static int count;
+	private bool scored = false;
+	private bool leftStart = false;
 
 	// Start is called before the first frame update
 	void Start()
@@ -31,34 +32,50 @@ public class RingTossManager : MonoBehaviour
 		}
 	}
 
-	public void RoundReset()
+	public void CheckForReset()
 	{
 		if (count >= numTries)
 		{
 			count = 0;
+			scored = false;
 			scoreKeeper.RoundReset();
 		}
 	}
 
 	private void OnTriggerStay(Collider other)
 	{
-		if (other.CompareTag("Goal"))
+		//If it stays on/in the goal.
+		if (other.CompareTag("Goal") && 
+			!scored &&
+			Mathf.Approximately(rb.velocity.x, 0f) &&
+			Mathf.Approximately(rb.velocity.y, 0f) &&
+			Mathf.Approximately(rb.velocity.z, 0f))
 		{
-			//if it's relatively stable.
-			if (Mathf.Approximately(rb.velocity.x, 0f) &&
-				Mathf.Approximately(rb.velocity.y, 0f) &&
-				Mathf.Approximately(rb.velocity.z, 0f))
-			{
-				scoreKeeper.Score(1);
-			}
+			scored = true;
+			scoreKeeper.Score(1);
 		}
-
 	}
+
+	//private void OnTriggerStay(Collider other)
+	//{
+	//	if (other.CompareTag("Goal"))
+	//	{
+
+	//		//if it's relatively stable.
+	//		if (Mathf.Approximately(rb.velocity.x, 0f) &&
+	//			Mathf.Approximately(rb.velocity.y, 0f) &&
+	//			Mathf.Approximately(rb.velocity.z, 0f))
+	//		{
+	//			scoreKeeper.Score(1);
+	//		}
+	//	}
+	//}
 
 	private void OnTriggerExit(Collider other)
 	{
-		if (other.CompareTag("StartArea"))
+		if (!leftStart && other.CompareTag("StartArea"))
 		{
+			leftStart = true;
 			count++;
 		}
 	}
