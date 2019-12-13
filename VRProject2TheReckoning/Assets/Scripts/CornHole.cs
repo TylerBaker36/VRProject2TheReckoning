@@ -84,7 +84,7 @@ public class CornHole : MonoBehaviour
         {
             b.GetComponent<Beanbag>().Respawn();
         }
-        beanbag_count = 4;
+        beanbag_count = 8;
         //all_thrown = false;
         scoreKeeper.GetComponent<ScoreKeeper>().RoundReset(); // Reset round but not overall score
     }
