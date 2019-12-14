@@ -9710,6 +9710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolfBall
       objectReference: {fileID: 0}
+    - target: {fileID: 7566211456176041762, guid: c2c6c32059a4bcf43a59be389acf024c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7566211456176041790, guid: c2c6c32059a4bcf43a59be389acf024c,
         type: 3}
       propertyPath: m_LocalPosition.x

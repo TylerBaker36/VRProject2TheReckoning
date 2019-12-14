@@ -18,6 +18,7 @@ public class GolfRespawner : MonoBehaviour
         Instantiate(golfBall);
         golfBall.transform.position = respawner.position;
     }
+
     public void TeleportBall(GameObject gameObject)
     {
         Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
