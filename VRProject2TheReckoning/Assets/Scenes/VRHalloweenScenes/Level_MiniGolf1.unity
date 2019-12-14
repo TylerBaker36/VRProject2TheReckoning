@@ -822,6 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 124716605}
   respawner: {fileID: 1439459238}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!65 &124716608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2962,6 +2963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 518497120}
   respawner: {fileID: 1827287474}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!65 &518497123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5202,6 +5204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1011966636}
   respawner: {fileID: 135821929}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!65 &1011966639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7073,6 +7076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1678338490}
   respawner: {fileID: 922359230}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!65 &1678338493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7806,6 +7810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1739387604}
   respawner: {fileID: 1270331215}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!65 &1739387607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8853,6 +8858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1959147943}
   respawner: {fileID: 1822720608}
+  golfBall: {fileID: 7566211456202593614}
 --- !u!1 &1980240052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9761,6 +9767,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2c6c32059a4bcf43a59be389acf024c, type: 3}
+--- !u!1 &7566211456202593614 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7566211456176041762, guid: c2c6c32059a4bcf43a59be389acf024c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7566211456202593613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8440604220167534772
 PrefabInstance:
   m_ObjectHideFlags: 0
