@@ -4,79 +4,80 @@ using UnityEngine;
 
 public class RingTossManager : MonoBehaviour
 {
-	/// <summary>
-	/// The number of tries, opportunities, or throws before the round is reset.
-	/// </summary>
-	[SerializeField] private int numTries = 3;
-	[SerializeField] private Rigidbody rb;
-	[SerializeField] private ScoreKeeper scoreKeeper;
+    /// <summary>
+    /// The number of tries, opportunities, or throws before the round is reset.
+    /// </summary>
+    [SerializeField] private int numTries = 3;
+    [SerializeField] private ScoreKeeper scoreKeeper;
 
-	private static int count;
-	private bool scored = false;
-	private bool leftStart = false;
+    private static int countMoved;
+    private static int countStill;
+    private bool reset = false;
 
-	// Start is called before the first frame update
-	void Start()
-	{
-		if (rb == null)
-		{
-			rb = transform.parent.GetComponent<Rigidbody>();
-		}
-		if(scoreKeeper == null)
-		{
-			scoreKeeper = FindObjectOfType<ScoreKeeper>();
-			if (scoreKeeper == null)
-			{
-				Debug.LogWarning("Scorekeeper is unable to be found in scene.");
-			}
-		}
-	}
+    private RingManager[] rings;
 
-	public void CheckForReset()
-	{
-		if (count >= numTries)
-		{
-			count = 0;
-			scored = false;
-			scoreKeeper.RoundReset();
-		}
-	}
+    // Start is called before the first frame update
+    private void Awake()
+    {
+        rings = FindObjectsOfType<RingManager>();
+        if (scoreKeeper == null)
+        {
+            scoreKeeper = FindObjectOfType<ScoreKeeper>();
+            if (scoreKeeper == null)
+            {
+                Debug.LogWarning("Scorekeeper is unable to be found in scene.");
+            }
+        }
+    }
 
-	private void OnTriggerStay(Collider other)
-	{
-		//If it stays on/in the goal.
-		if (other.CompareTag("Goal") && 
-			!scored &&
-			Mathf.Approximately(rb.velocity.x, 0f) &&
-			Mathf.Approximately(rb.velocity.y, 0f) &&
-			Mathf.Approximately(rb.velocity.z, 0f))
-		{
-			scored = true;
-			scoreKeeper.Score(1);
-		}
-	}
+    public void IncrementMovedCount()
+    {
+        countMoved++;
+    }
 
-	//private void OnTriggerStay(Collider other)
-	//{
-	//	if (other.CompareTag("Goal"))
-	//	{
+    // Update is called once per frame
+    void Update()
+    {
+        countStill = 0;
+        foreach( RingManager ring in rings)
+        {
+            if (ring.isStill)
+            {
+                countStill++;
+            }
+        }
 
-	//		//if it's relatively stable.
-	//		if (Mathf.Approximately(rb.velocity.x, 0f) &&
-	//			Mathf.Approximately(rb.velocity.y, 0f) &&
-	//			Mathf.Approximately(rb.velocity.z, 0f))
-	//		{
-	//			scoreKeeper.Score(1);
-	//		}
-	//	}
-	//}
+        reset = (countMoved >= numTries) && (countStill >= countMoved);
+        if (reset) StartCoroutine(LazyCheckForReset(0.1f));
+    }
 
-	private void OnTriggerExit(Collider other)
-	{
-		if (!leftStart && other.CompareTag("StartArea"))
-		{
-			leftStart = true;
-			count++;
-		}
-	}
+    private IEnumerator LazyCheckForReset(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(seconds);
+        CheckForReset();
+    }
+
+    public void CheckForReset(bool overRide = false)
+    {
+        if (reset || overRide)
+        {
+            countMoved = 0;
+            rings = FindObjectsOfType<RingManager>();
+            if (rings != null)
+            {
+                for (int i = 0; i < rings.Length; i++)
+                {
+                    rings[i].ResetRingData();
+                }
+            }
+            SceneReset sceneReset = FindObjectOfType<SceneReset>();
+            if (sceneReset != null)
+                sceneReset.ResetAllTransforms();
+        }
+    }
+
+    public void Score(int points)
+    {
+        scoreKeeper.Score(points);
+    }
 }

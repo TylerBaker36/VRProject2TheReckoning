@@ -8,6 +8,8 @@ public class DetectThrow : MonoBehaviour
     [SerializeField] private OVRGrabbable grabbableObj;
     public UnityEvent ThrowEvent;
 
+    public uint throwCount { get; private set; } = 0;
+
     private bool grabbed = false;
     // Start is called before the first frame update
     void Awake()
@@ -33,6 +35,7 @@ public class DetectThrow : MonoBehaviour
         {
             //Object has been thrown
             grabbed = false;
+            throwCount++;
             ThrowEvent.Invoke();
         }
     }
