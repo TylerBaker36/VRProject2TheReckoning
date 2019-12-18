@@ -10,7 +10,11 @@ public class DestroyObjects : MonoBehaviour
     {
         if (collision.collider.tag == "Bullet")
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+
+            //Teleport the cube to the origin
+            gameObject.transform.position = new Vector3(0,3,0);
+
             scoreTrack.AddScore(1);
         }
     }
