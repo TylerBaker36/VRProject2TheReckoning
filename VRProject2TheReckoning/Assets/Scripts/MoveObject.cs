@@ -7,7 +7,7 @@ public class MoveObject : MonoBehaviour
     //private Rigidbody rigidbody;
     private float speed = 5;
     private float leftTime = 0;
-    private float interval = 2;
+    private float interval = 1.5f;
     private int phase = 0;
     private int maxPhase;
 
