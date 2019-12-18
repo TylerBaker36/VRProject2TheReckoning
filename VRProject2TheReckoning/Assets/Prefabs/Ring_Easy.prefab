@@ -543,6 +543,8 @@ GameObject:
   - component: {fileID: 7716358286696156595}
   - component: {fileID: 7716358286696156594}
   - component: {fileID: 3984420343375282463}
+  - component: {fileID: 1284323973}
+  - component: {fileID: 1284323974}
   m_Layer: 0
   m_Name: Ring_Easy
   m_TagString: Untagged
@@ -6666,7 +6668,7 @@ MeshCollider:
   m_GameObject: {fileID: 7716358286696156597}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
@@ -6704,6 +6706,34 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1284323973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7716358286696156597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6b13bdf40fbec46b708422490b01b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1284323974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7716358286696156597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d2db87ac8a5604dab6eabab4ecf2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbableObj: {fileID: 3984420343375282463}
+  ThrowEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9146690893074701588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6713,7 +6743,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4511413983315980407}
-  - component: {fileID: 305597103525426012}
+  - component: {fileID: 1194284891}
+  - component: {fileID: 1194284890}
   m_Layer: 0
   m_Name: Ring Center
   m_TagString: Untagged
@@ -6735,8 +6766,8 @@ Transform:
   m_Father: {fileID: 7716358286696156623}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &305597103525426012
-CapsuleCollider:
+--- !u!65 &1194284891
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6745,7 +6776,20 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 0.01
-  m_Direction: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 1, z: 0.85}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1194284890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9146690893074701588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fb0a05d5dc91140916de645e74dadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7716358286696156594}
+  points: 1

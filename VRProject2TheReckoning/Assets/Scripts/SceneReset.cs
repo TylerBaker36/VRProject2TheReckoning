@@ -18,10 +18,6 @@ public class SceneReset : MonoBehaviour
 		GameObject RootItem = other.transform.root.gameObject;
 		Reset res = RootItem.GetComponentInChildren<Reset>();
 		if (res) res.ResetTransform();
-		//if (other.CompareTag("Player"))
-		//{
-		//	SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-		//}
 	}
 
 	public void ResetAll(string exclude = "Player")
@@ -32,14 +28,6 @@ public class SceneReset : MonoBehaviour
 			case "Level_RingToss":
 				RingTossManager ringTossManager = FindObjectOfType<RingTossManager>();
 				ringTossManager.CheckForReset(true);
-				//RingManager[] ringManagers = FindObjectsOfType<RingManager>();
-				//if (ringManagers != null)
-				//{
-				//	for (int i = 0; i < ringManagers.Length; i++)
-				//	{
-				//		ringManagers[i].CheckForReset(true);
-				//	}
-				//}
 				break;
 			default:
 				break;

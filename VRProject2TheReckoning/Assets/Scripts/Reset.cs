@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Reset : MonoBehaviour
 {
+    [SerializeField] private bool useLocalScale = true;
     private Vector3 startPos;
     private Quaternion startRotation;
+    private Vector3 startScale;
     private Vector3 startVelocity;
     private Rigidbody rb;
     private CharacterController cc;
@@ -14,6 +16,9 @@ public class Reset : MonoBehaviour
     {
         startPos = transform.position;
         startRotation = transform.rotation;
+
+        if (useLocalScale) startScale = transform.localScale;
+        else startScale = transform.lossyScale;
 
         rb = GetComponent<Rigidbody>();
         cc = GetComponent<CharacterController>();
@@ -25,6 +30,9 @@ public class Reset : MonoBehaviour
     {
         transform.position = startPos;
         transform.rotation = startRotation;
+
+        transform.localScale = startScale;
+
         if (rb) rb.velocity = startVelocity;
         else if (cc) cc.velocity.Set(startVelocity.x, startVelocity.y, startVelocity.z);
     }

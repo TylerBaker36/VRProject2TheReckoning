@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class GameObjectEvent : UnityEvent<GameObject>
+{
+
+}
+
 public class DetectThrow : MonoBehaviour
 {
     [SerializeField] private OVRGrabbable grabbableObj;
-    public UnityEvent ThrowEvent;
+    public GameObjectEvent ThrowEvent;
 
     public uint throwCount { get; private set; } = 0;
 
@@ -36,7 +42,7 @@ public class DetectThrow : MonoBehaviour
             //Object has been thrown
             grabbed = false;
             throwCount++;
-            ThrowEvent.Invoke();
+            ThrowEvent.Invoke(gameObject);
         }
     }
 }

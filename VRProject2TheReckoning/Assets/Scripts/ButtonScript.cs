@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ButtonPress : MonoBehaviour
+public class ButtonScript : MonoBehaviour
 {
     public UnityEvent buttonPress;
+    public UnityEvent buttonStay;
+    public UnityEvent buttonRelease;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(buttonPress == null)
+        if (buttonPress == null)
         {
             buttonPress = new UnityEvent();
         }
@@ -18,7 +21,7 @@ public class ButtonPress : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +34,11 @@ public class ButtonPress : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        
+        buttonStay.Invoke();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        buttonRelease.Invoke();
     }
 }
