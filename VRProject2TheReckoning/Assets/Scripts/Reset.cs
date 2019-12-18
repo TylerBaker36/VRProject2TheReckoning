@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Reset : MonoBehaviour
 {
+    /// <summary>
+    /// If true, stores the local scale to reset the object to. Otherwise, stores the world scale (lossyScale) of the object.
+    /// </summary>
     [SerializeField] private bool useLocalScale = true;
     private Vector3 startPos;
     private Quaternion startRotation;
