@@ -47,12 +47,6 @@ public class MoveObject : MonoBehaviour
         }
     }
 
-    //private void GoToDestination(Transform destination)
-    //{
-    //    float step = speed * Time.deltaTime;
-    //    this.gameObject.transform.localPosition = Vector3.MoveTowards(gameObject.transform.localPosition, destination.position, step);
-    //}
-
     private void TargetSwitcher(float gap)
     {
         leftTime -= Time.deltaTime;
