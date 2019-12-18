@@ -13,7 +13,7 @@ public class GolfController : MonoBehaviour
             //GolfRespawner golfRespawner = gameObject.transform.parent.GetComponent<GolfRespawner>();
             //this.transform.position = golfRespawner.respawner.position;
 
-            gameObject.GetComponent<GolfRespawner>().TeleportBall(this.gameObject);
+            gameObject.transform.parent.GetComponent<GolfRespawner>().TeleportBall(this.gameObject);
         }
     }
 }
