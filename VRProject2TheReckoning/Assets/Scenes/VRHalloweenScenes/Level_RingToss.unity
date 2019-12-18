@@ -282,7 +282,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh175348
+  m_Name: pb_Mesh-35166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -675,7 +675,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh174814
+  m_Name: pb_Mesh52216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6167,7 +6167,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: activatedColor
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
   buttonStay:
     m_PersistentCalls:
       m_Calls: []
@@ -6184,7 +6184,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!135 &439651870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7276,7 +7276,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 9.551468e-38, z: NaN, w: 9e-44}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -5.13377}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -10130,7 +10130,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh175524
+  m_Name: pb_Mesh52930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10811,11 +10811,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numTries: 3
   pointsPerLine: 1
-  scoreKeeper: {fileID: 0}
+  scoreKeeper: {fileID: 661255438}
   throwingLines:
   - {fileID: 1629523787}
   - {fileID: 666445031}
   - {fileID: 1533249538}
+  player: {fileID: 2139185290}
 --- !u!4 &1990435603
 Transform:
   m_ObjectHideFlags: 0
@@ -11288,3 +11289,9 @@ Transform:
   m_Father: {fileID: 156052482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2139185290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3170277552095386042, guid: d7a165b1b1488824581f92dd453f62e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 501946365}
+  m_PrefabAsset: {fileID: 0}
