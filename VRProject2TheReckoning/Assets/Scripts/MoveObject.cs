@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     //private Rigidbody rigidbody;
-    private float speed = 3;
+    private float speed = 5;
     private float leftTime = 0;
     private float interval = 2;
     private int phase = 0;
