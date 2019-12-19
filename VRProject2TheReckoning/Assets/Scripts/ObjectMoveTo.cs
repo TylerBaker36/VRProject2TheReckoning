@@ -41,7 +41,7 @@ public class ObjectMoveTo : MonoBehaviour
 
         lerpAmount = (speed * deltaTime) / pointDistance;
 
-        if(objectDistance <= .05f)
+        if(objectDistance <= .01f)
         {
             transform.position = nextLocation.position;
         }
