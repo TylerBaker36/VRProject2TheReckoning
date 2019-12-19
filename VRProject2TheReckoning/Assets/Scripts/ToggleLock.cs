@@ -16,11 +16,12 @@ public class ToggleLock : MonoBehaviour
 {
     [SerializeField] private bool lockstate = true;
     [SerializeField] private string specificKey;
+    [SerializeField] private float turnDegreesThreshold = 5.0f;
     public BoolEvent lockToggled;
 
     private void Awake()
     {
-        if (lockToggled == null) 
+        if (lockToggled == null)
             lockToggled = new BoolEvent();
     }
 
