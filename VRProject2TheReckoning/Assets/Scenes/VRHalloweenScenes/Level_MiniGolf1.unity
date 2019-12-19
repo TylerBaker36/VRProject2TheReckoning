@@ -7246,6 +7246,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1348607928}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348607930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3169079201907685499, guid: d7a165b1b1488824581f92dd453f62e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348607928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1348607931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348607930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2b084cd5948f642b483a39a2bc52b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golfBall: {fileID: 0}
 --- !u!1 &1348956123
 GameObject:
   m_ObjectHideFlags: 0
