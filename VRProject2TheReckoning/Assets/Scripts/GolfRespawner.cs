@@ -12,4 +12,9 @@ public class GolfRespawner : MonoBehaviour
         gameObject.transform.position = respawner.position;
         gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
     }
+
+    public void GenerateBall(GameObject gameObject)
+    {
+        Instantiate(gameObject);
+    }
 }

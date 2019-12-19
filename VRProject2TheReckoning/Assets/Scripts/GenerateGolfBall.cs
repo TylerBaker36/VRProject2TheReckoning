@@ -9,9 +9,25 @@ public class GenerateGolfBall : MonoBehaviour
     void Update()
     {
         
-        if (OVRInput.GetDown(OVRInput.Button.One))
+        if (OVRInput.GetDown(OVRInput.Button.Three))
         {
             Instantiate(golfBall).transform.position = gameObject.transform.position;
+        }
+
+        //Remove all the balls and regenerate the ball to the origins
+        if (OVRInput.GetDown(OVRInput.Button.One))
+        {
+            GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
+            foreach (GameObject ball in balls)
+            {
+                Destroy(ball);
+            }
+
+            GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
+            foreach (GameObject target in targets)
+            {
+                target.transform.parent.GetComponent<GolfRespawner>().GenerateBall(golfBall);
+            }
         }
     }
 }

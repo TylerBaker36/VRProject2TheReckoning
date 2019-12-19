@@ -5,12 +5,12 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     //private Rigidbody rigidbody;
-    private float speed = 5;
     private float leftTime = 0;
-    private float interval = 1.5f;
     private int phase = 0;
     private int maxPhase;
 
+    public float speed = 5;
+    public float interval = 1.5f;
     public Transform[] targets;
     // Start is called before the first frame update
     void Start()

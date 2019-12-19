@@ -9,6 +9,7 @@ TagManager:
   - Target
   - Goal
   - StartArea
+  - Ball
   layers:
   - Default
   - TransparentFX

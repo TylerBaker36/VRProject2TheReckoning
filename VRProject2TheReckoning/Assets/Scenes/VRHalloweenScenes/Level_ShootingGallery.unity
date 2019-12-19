@@ -541,7 +541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &163682150
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &342185996
 Transform:
   m_ObjectHideFlags: 0
@@ -2346,15 +2346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!4 &800517089 stripped
 Transform:
@@ -2543,15 +2538,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!1 &867158171
 GameObject:
@@ -2717,7 +2707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1030923599
 Transform:
   m_ObjectHideFlags: 0
@@ -3107,15 +3097,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!1 &1187622199
 GameObject:
@@ -3132,7 +3117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1187622200
 Transform:
   m_ObjectHideFlags: 0
@@ -3195,16 +3180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &1188458888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,7 +3432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1233896621
 Transform:
   m_ObjectHideFlags: 0
@@ -3491,7 +3471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245582133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 3, z: 7}
+  m_LocalPosition: {x: -7, y: 3, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1614773533}
@@ -3512,7 +3492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1258474117
 Transform:
   m_ObjectHideFlags: 0
@@ -4324,15 +4304,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!1 &1449092611
 GameObject:
@@ -4721,16 +4696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &1548353673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,7 +5059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617559722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 3, z: 7}
+  m_LocalPosition: {x: 7, y: 3, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1614773533}
@@ -5370,16 +5340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &1707468266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5807,7 +5772,7 @@ PrefabInstance:
     - target: {fileID: 114258639798283212, guid: 3a041205f62419f439a714f534390f0d,
         type: 3}
       propertyPath: shotPower
-      value: 1500
+      value: 3000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a041205f62419f439a714f534390f0d, type: 3}
@@ -6008,15 +5973,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!1001 &1971666133
 PrefabInstance:
@@ -6088,7 +6048,7 @@ PrefabInstance:
     - target: {fileID: 114258639798283212, guid: 3a041205f62419f439a714f534390f0d,
         type: 3}
       propertyPath: shotPower
-      value: 1500
+      value: 3000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a041205f62419f439a714f534390f0d, type: 3}
@@ -6200,16 +6160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &1994185562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6347,16 +6302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &2000371853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6494,16 +6444,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
-  - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
+  - {fileID: 1617559723}
 --- !u!114 &2056773670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6730,15 +6675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf70c574bf6be4c4fa6ad53730ee2c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 7.5
+  interval: 3
   targets:
-  - {fileID: 163682150}
-  - {fileID: 163682150}
   - {fileID: 1617559723}
-  - {fileID: 1258474117}
-  - {fileID: 342185996}
-  - {fileID: 1187622200}
-  - {fileID: 1030923599}
-  - {fileID: 1233896621}
   - {fileID: 1245582134}
 --- !u!1 &2119989654
 GameObject:
