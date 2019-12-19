@@ -10,5 +10,7 @@ public class GolfRespawner : MonoBehaviour
     public void TeleportBall(GameObject gameObject)
     {
         gameObject.transform.position = respawner.position;
+
+        gameObject.transform.parent.GetComponent<ScoreTrack>().AddScore(1);
     }
 }
