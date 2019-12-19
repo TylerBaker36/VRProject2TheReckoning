@@ -15,6 +15,6 @@ public class GolfRespawner : MonoBehaviour
 
     public void GenerateBall(GameObject gameObject)
     {
-        Instantiate(gameObject);
+        Instantiate(gameObject, respawner.transform);
     }
 }
